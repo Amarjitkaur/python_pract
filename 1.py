@@ -5,7 +5,10 @@ def funtion():
         values = int(input('Enter the Phone number of Employee:'))
         dic[keys] = values
     print(dic)
-    return dic[input('Enter the  Name of Employee you want to be search phone number: ')]
+    search = input('Enter the  Name of Employee you want to be search phone number: ')
+    if search in dic:
+        print('Employee phone number:',dic[search])
+    else:
+        print('Does not exist!!')
 
-calling  = funtion()
-print(calling)
+funtion()
