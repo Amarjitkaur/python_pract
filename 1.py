@@ -1,0 +1,11 @@
+dic = dict()
+def funtion():
+    for i in range(2):
+        keys = input('Enter the name of Employee:')
+        values = int(input('Enter the Phone number of Employee:'))
+        dic[keys] = values
+    print(dic)
+    return dic[input('Enter the  Name of Employee you want to be search phone number: ')]
+
+calling  = funtion()
+print(calling)
